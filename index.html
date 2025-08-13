@@ -19,18 +19,15 @@
     <!-- Custom CSS -->
      <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Custom JS -->
-    <script src="assets/js/script.js"></script>
-
     <!-- Preload Images -->
 
 </head>
 <body>
     <!-- #Header -->
-     <header class="header active">
+     <header class="header active" data-header>
         <div class="container">
             <a href="#" class="logo"><img src="./assets/images/logo.png" width="190" height="28" alt="wealthome"></a>
-                <nav class="navbar active" data-navbar>
+                <nav class="navbar" data-navbar>
                     <ul class="navbar-list">
                         <li>
                             <a href="#" class="navbar-link label-medium active">Home</a>
@@ -39,13 +36,13 @@
                             <a href="#" class="navbar-link label-medium">Rent</a>
                         </li>
                         <li>
-                            <a href="#" class="navbar-link label-medium active">Sell</a>
+                            <a href="#" class="navbar-link label-medium">Sell</a>
                         </li>
                         <li>
-                            <a href="#" class="navbar-link label-medium active">Buy</a>
+                            <a href="#" class="navbar-link label-medium">Buy</a>
                         </li>
                         <li>
-                            <a href="#" class="navbar-link label-medium active">About</a>
+                            <a href="#" class="navbar-link label-medium">About</a>
                         </li>
                     </ul>
                     <div class="navbar-wrapper">
@@ -53,13 +50,83 @@
                         <button class="btn btn-fill label-medium">Get Started</button>
                     </div>
                 </nav>
-                <button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
+                <button class="nav-toggle-btn icon-btn active" aria-label="toggle navbar" data-nav-toggle>
                     <span class="material-symbols-rounded open" aria-hidden="true">menu</span>
                     <span class="material-symbols-rounded close" aria-hidden="true">close</span>
                 </button>
-        </div>
-      
+        </div>    
      </header>
+<main>
+    <article>
+        <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="headline-large hero-title">
+                    Find a place where you can be yourself.
+                </h1>
+                <p class="body-large hero-text">
+                  If you're looking for a place where you can be yourself, don't give up. Keep searching until you find a place that feels like home.
+                </p>
+                <form action="./" method="get" class="search-bar">
+                    <label for="" class="search-item">
+                        <span class="label-medium label">Want to</span>
+                    <select name="want-to" class="search-item-field body-medium">
+                        <option value="buy">Buy</option>
+                        <option value="Sell">Sell</option>
+                        <option value="Rent">Rent</option>
+                    </select>
+                    
+                    <span class="material-symbols-rounded" aria-hidden="true">real_estate_agent</span>
 
+                    
+                    </label>
+                     <label for="" class="search-item">
+                        <span class="label-medium label">Property type</span>
+                        <select name="property-type" class="search-item-field body-medium">
+                            <option value="any" selected>Any</option>
+                            <option value="houses">Houses</option>
+                            <option value="apartments">Apartments</option>
+                            <option value="villa">Villa</option>
+                            <option value="townhome">Townhome</option>
+                            <option value="Bungalow">Bungalow</option>
+                            <option value="loft">Loft</option>
+                        </select>
+                    
+                    <span class="material-symbols-rounded" aria-hidden="true">gite</span>
+
+                    
+                    </label>
+                     <label for="" class="search-item">
+                        <span class="label-medium label">Location</span>
+                       <input type="text" class="search-item-field body-medium" name="location" placeholder="Street, City, Zip..">
+                        <span class="material-symbols-rounded" aria-hidden="true">location_on</span>                    
+                    </label>
+                    <button type="submit" class="search-btn" aria-hidden="true">
+                        <span class="material-symbols-rounded" aria-hidden="true">search</span>
+                        <span class="label-medium">search</span>
+                    </button>
+                </form>
+            </div>
+            <img src="./assets/images/hero.png" width="816" height="659" class="hero-banner" role="presentation">
+            <img src="./assets/images/bg-pattern.png" width="1240" height="840" class="bg-pattern" role="presentation">
+        </div>
+    </section> 
+    <!-- Property Section -->
+    <section class="section property" aria-labelledby="property-label">
+        <div class="container">
+            <div class="title-wrapper">
+                <h2 class="section-title headline-small">Best home in your city</h2>
+                <p class="section-text body-large">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquam inventore tenetur delectus explicabo eius blanditiis quas optio iure, animi culpa labore odit dolorum, laudantium in autem, fugit corrupti dicta.
+                </p>
+            </div>
+            <a href="#" class="btn btn-outline"><span class="label-medium">Explore more</span> <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span></a>
+        </div>
+    </section>
+    </article>
+</main>
+<!-- Custom JS -->
+<script src="assets/js/script.js"></script>
 </body>
 </html>
