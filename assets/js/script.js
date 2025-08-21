@@ -14,3 +14,11 @@ if ($header) {
     $header.classList[window.scrollY > 50 ? "add" : "remove"]("active");
   });
 }
+const /** {NodeList} */ $toggleBtns = document.querySelectorAll("[data-toggle-btn");
+console.log($toggleBtns);
+
+$toggleBtns.forEach($toggleBtn => {
+  $toggleBtn.addEventListener("click", () => {
+    $toggleBtn.classList.toggle("active");
+  })
+})
